@@ -1,7 +1,18 @@
-export default function HeroSections() {
+import MotionWrapper from "@/componentes/animation/MotionWrapper";
+
+
+interface props {
+    number: string;
+    title: string;
+    subtitle: string;
+}
+
+export default function BannerSections({number ,title, subtitle}: props) {
+
     return (
         <section
-            className="relative w-full min-h-screen flex flex-col justify-center items-start px-6 md:px-12 lg:px-24">
+            className="relative w-full min-h-screen flex flex-col justify-center items-start px-6 md:px-12 lg:px-12"
+            style={{ backgroundImage: "url(/home/hero-banner-lights.webp)" }}>
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat">
             </div>
@@ -10,13 +21,13 @@ export default function HeroSections() {
 
             <div className="relative z-10 flex flex-col items-start gap-4 md:gap-6 mt-20">
                 <h1 className="flex items-center gap-3 text-white text-4xl md:text-5xl lg:text-6xl font-medium font-['Montserrat'] uppercase tracking-wide">
-                    <span>02.</span>
-                    <span>Nosotros</span>
+                    <MotionWrapper tag={"span"} delay={.2}>{number}.</MotionWrapper>
+                    <MotionWrapper tag={"span"} delay={.4}>{title}</MotionWrapper>
                 </h1>
 
-                <p className="text-neutral-200 text-lg md:text-xl font-normal font-['Montserrat'] capitalize">
-                    Donde las ideas toman forma.
-                </p>
+                <MotionWrapper tag={"p"} delay={.5} className="text-neutral-200 text-lg md:text-xl font-normal font-['Montserrat'] capitalize">
+                    {subtitle}
+                </MotionWrapper>
 
                 <a href="#next-section"
                    className="mt-8 text-white hover:text-neutral-400 transition-colors animate-bounce"

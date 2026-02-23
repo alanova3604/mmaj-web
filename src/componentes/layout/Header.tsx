@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Logo from "../../../public/logo-mmaj.webp"
 import MenuNav from "@/componentes/IU/MenuNav";
@@ -15,7 +14,6 @@ export default function Header () {
             </Link>
 
             <MenuNav></MenuNav>
-
         </header>
     );
 }

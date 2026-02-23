@@ -1,10 +1,12 @@
-import HeroSections from "@/componentes/layout/HeroSections";
+import BannerSections from "@/componentes/layout/BannerSections";
 
 export default function Contacto(){
     return (
         <div>
 
-            <HeroSections></HeroSections>
+            <BannerSections title={"Contacto"} number={"04"}
+                            subtitle={"Apertura de consulta técnica. Inicie su proyecto mediante nuestro protocolo de diseño y planificación de diseño personalizado."} >
+            </BannerSections>
 
 
             <section
@@ -31,24 +33,6 @@ export default function Contacto(){
 
                             <input type="tel" placeholder="Phone number *" required
                                    className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"/>
-
-                            <div className="relative w-full">
-                                <select
-                                    className="w-full h-12 px-5 bg-zinc-500 text-white text-sm font-normal font-['Montserrat'] appearance-none focus:outline-none focus:ring-2 focus:ring-white transition-all cursor-pointer">
-                                    <option value="" disabled selected>How did you find us?</option>
-                                    <option value="social">Social Media</option>
-                                    <option value="search">Search Engine</option>
-                                    <option value="referral">Referral</option>
-                                </select>
-                                <div
-                                    className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-white">
-                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                            </div>
 
                             <button type="submit"
                                     className="w-full h-16 mt-2 bg-white text-black text-base font-bold font-['Montserrat'] uppercase hover:bg-gray-200 transition-colors">

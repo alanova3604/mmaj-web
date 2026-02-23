@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer(){
     return(
         <footer className="w-full bg-zinc-800 p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-6">
@@ -11,14 +13,14 @@ export default function Footer(){
             <div className="flex-1 flex flex-col justify-between gap-12 lg:gap-24">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-6">
                     <nav className="flex flex-col gap-2">
-                        <a href="#"
-                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Inicio</a>
-                        <a href="#"
-                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Nosotros</a>
-                        <a href="#"
-                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Proyectos</a>
-                        <a href="#"
-                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Contacto</a>
+                        <Link href="/"
+                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Inicio</Link>
+                        <Link href="/nosotros"
+                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Nosotros</Link>
+                        <Link href="/proyectos"
+                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Proyectos</Link>
+                        <Link href="/contacto"
+                           className="text-white text-lg font-normal  hover:text-gray-300 transition-colors">Contacto</Link>
                     </nav>
                     <div className="opacity-40 text-white text-sm md:text-base font-normal ">
                         © 2026 — Copyright

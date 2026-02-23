@@ -1,9 +1,11 @@
-import HeroSections from "@/componentes/layout/HeroSections";
+import BannerSections from "@/componentes/layout/BannerSections";
 export default function Nosotros(){
     return(
         <div>
 
-            <HeroSections></HeroSections>
+            <BannerSections title={"Nosotros"} number={"02"}
+                            subtitle={"Ingeniería y herencia familiar. Fusionamos maestría artesanal con procesos digitales para crear sistemas de mobiliario de alto desempeño."} >
+            </BannerSections>
 
 
             <section
