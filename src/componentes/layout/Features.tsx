@@ -4,7 +4,6 @@ import MotionWrapper from "@/componentes/animation/MotionWrapper";
 import Link from "next/link";
 // Usando tu nuevo componente
 
-
 type FeatureType = "cocinas" | "closets" | "baños";
 
 interface FeatureContent {
@@ -34,7 +33,6 @@ const FEATURES_DATA: Record<FeatureType, FeatureContent> = {
 export default function Features() {
     const [active, setActive] = useState<FeatureType>("cocinas");
 
-
     const current = FEATURES_DATA[active];
 
     return (
@@ -49,7 +47,7 @@ export default function Features() {
                         <h2
                             key={key}
                             onClick={() => setActive(key)}
-                            className={`text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight cursor-pointer transition-all duration-300 ${
+                            className={`cursor-pointer text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight cursor-pointer transition-all duration-300 ${
                                 active === key ? "text-white scale-105 origin-left" : "text-neutral-600 hover:text-neutral-400"
                             }`}
                         >

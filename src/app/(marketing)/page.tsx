@@ -2,14 +2,16 @@ import MotionWrapper from "@/componentes/animation/MotionWrapper";
 import Features from "@/componentes/layout/Features"
 import SwipperHome from "@/componentes/IU/SwipperHome";
 
+const CtaBanner = "/home/cta-banner.webp"
 const HeroBanner = '/home/hero-banner.webp'
 const HeroBannerLights = '/home/hero-banner-lights.webp'
 
 const imagenes = [
-    "/home/features_1.webp",
-    "/home/features_1.webp",
-  "/home/features_1.webp",
-  "/home/features_1.webp",
+    "/sliderHome/1.jpg",
+    "/sliderHome/2.jpg",
+    "/sliderHome/3.jpg",
+    "/sliderHome/4.jpg",
+    "/sliderHome/5.jpg"
 ]
 
 
@@ -18,23 +20,26 @@ export default function Home() {
       <div className="min-h-screen">
 
         <section
-            className="relative w-full min-h-screen flex flex-col bg-cover bg-center justify-center items-start px-6  lg:px-12" style={{ backgroundImage: `url(${HeroBanner})` }}>
+            className="relative w-full min-h-screen flex flex-col bg-cover bg-center justify-center items-start px-6  lg:px-12"
+            style={{backgroundImage: `url(${HeroBanner})`}}>
 
 
-          <MotionWrapper tag={"div"} duration={1} delay={1.8} className={"absolute inset-0 bg-cover bg-center bg-no-repeat"} style={{ backgroundImage: `url(${HeroBannerLights})` }}>
+          <MotionWrapper tag={"div"} duration={1} delay={1.8}
+                         className={"absolute inset-0 bg-cover bg-center bg-no-repeat"}
+                         style={{backgroundImage: `url(${HeroBannerLights})`}}>
           </MotionWrapper>
 
 
           <div className="z-10 flex flex-col gap-4 md:gap-6">
 
 
-              <h1 className="text-white text-3xl md:text-5xl lg:text-5xl font-medium   capitalize">
-                <MotionWrapper delay={.2} tag={"span"}>Donde</MotionWrapper> {''}
-                <MotionWrapper delay={.4} tag={"span"}>la</MotionWrapper> {''}
-                <MotionWrapper delay={.6} className={"font-bold"} tag={"span"}>alta ingeniería</MotionWrapper> {''}
-                <MotionWrapper delay={.8} tag={"span"}>se encuentra con tú</MotionWrapper> {''}
-                <MotionWrapper delay={1} className={"text-[#C1A073] font-bold"} tag={"span"}>hogar</MotionWrapper>{''}
-              </h1>
+            <h1 className="text-white text-3xl md:text-5xl lg:text-5xl font-medium   capitalize">
+              <MotionWrapper delay={.2} tag={"span"}>Donde</MotionWrapper> {''}
+              <MotionWrapper delay={.4} tag={"span"}>la</MotionWrapper> {''}
+              <MotionWrapper delay={.6} className={"font-bold"} tag={"span"}>alta ingeniería</MotionWrapper> {''}
+              <MotionWrapper delay={.8} tag={"span"}>se encuentra con tú</MotionWrapper> {''}
+              <MotionWrapper delay={1} className={"text-[#C1A073] font-bold"} tag={"span"}>hogar</MotionWrapper>{''}
+            </h1>
 
 
             <MotionWrapper delay={1.5}>
@@ -50,8 +55,8 @@ export default function Home() {
 
 
         <section
-            className="w-full bg-gradient-to-br from-zinc-500/10 to-zinc-500/20 overflow-hidden">
-          <div className="px-6 md:px-12 lg:px-24 flex flex-col items-start gap-4">
+            className="w-full py-22 bg-gradient-to-br from-zinc-500/10 to-zinc-500/20 overflow-hidden">
+          <div className="px-6 mb-12 md:px-12 lg:px-24 flex flex-col items-start gap-4">
             <h2 className="text-white text-4xl md:text-5xl font-bold font-['Montserrat'] capitalize leading-tight">
               <MotionWrapper tag={"span"} duration={.3} delay={.2}>
                 Archivos
@@ -82,15 +87,15 @@ export default function Home() {
         </section>
 
 
-
-
         <section
             className="w-full bg-stone-900 px-6 py-16 md:px-12 lg:py-20 flex flex-col justify-center items-center gap-12 overflow-hidden">
           <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
-            <MotionWrapper tag={"h2"} delay={.1} className="text-white text-4xl md:text-5xl font-bold font-['Montserrat'] capitalize leading-tight">
+            <MotionWrapper tag={"h2"} delay={.1}
+                           className="text-white text-4xl md:text-5xl font-bold font-['Montserrat'] capitalize leading-tight">
               Ciclo De Trabajo
             </MotionWrapper>
-            <MotionWrapper tag={"p"} delay={.2} className="text-neutral-400 text-base md:text-lg font-bold font-['Montserrat'] capitalize">
+            <MotionWrapper tag={"p"} delay={.2}
+                           className="text-neutral-400 text-base md:text-lg font-bold font-['Montserrat'] capitalize">
               Eliminamos la incertidumbre mediante procesos controlados
             </MotionWrapper>
           </div>
@@ -98,7 +103,7 @@ export default function Home() {
           <div
               className="w-full bg-gradient-to-br from-zinc-800/0 to-zinc-800 rounded-[20px] p-6 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 lg:min-h-[600px]">
 
-            <MotionWrapper tag={"div"} duration={.4} delay={.1} className="flex flex-col items-center lg:mt-48 group">
+            <MotionWrapper tag={"div"} duration={.4} delay={.1}  className="flex flex-col items-center lg:mt-48 group">
               <div
                   className="w-full h-full lg:h-auto p-6 bg-stone-900/80 rounded-xl shadow-[0_0_30px_0_rgba(152,152,152,0.1)] backdrop-blur-md border border-white/5 transition-transform duration-300 hover:-translate-y-2">
                 <h3 className="text-white text-base md:text-lg font-bold font-['Montserrat'] capitalize mb-2">01.
@@ -146,6 +151,34 @@ export default function Home() {
               <div className="hidden lg:block w-px h-full border-l border-dashed border-zinc-600/50 mt-4"></div>
             </MotionWrapper>
 
+          </div>
+        </section>
+
+
+        <section
+            className="relative w-full py-24 pb-10 md:py-32 md:pb-10 lg:pb-100  lg:py-40 flex flex-col justify-center items-center px-6 overflow-hidden">
+          <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${CtaBanner})` }}>
+          </div>
+
+          <div className="absolute inset-0 bg-stone-950/70"></div>
+
+          <div className="relative z-10 flex flex-col items-center gap-6 md:gap-8 text-center">
+            <MotionWrapper tag={"h2"} className="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-['Montserrat']">
+              Invierte En Tu Casa HOY
+            </MotionWrapper>
+
+            <MotionWrapper delay={.4}>
+              <a href="/contacto"
+                 className="group inline-flex items-center gap-2 text-white hover:text-neutral-300 transition-colors">
+                <span className="text-lg md:text-xl lg:text-2xl font-medium font-['Montserrat']">Cotizar Ahora</span>
+                <svg className="w-5 h-5 md:w-6 md:h-6 transform group-hover:translate-x-1 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </MotionWrapper>
           </div>
         </section>
 

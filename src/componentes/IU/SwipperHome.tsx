@@ -17,8 +17,8 @@ export default function SwipperHome({imagenes}: Props) {
     return (
         <Swiper
             modules={[Autoplay]}
-            spaceBetween={0}
-            slidesPerView={2}
+            spaceBetween={25}
+            slidesPerView={3}
             loop={true}
             autoplay={{
                 delay: 3000,

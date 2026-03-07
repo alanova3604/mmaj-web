@@ -24,15 +24,41 @@ export default function Contacto(){
                             </p>
                         </div>
 
-                        <form className="w-full max-w-[545px] flex flex-col gap-5">
-                            <input type="text" placeholder="Name *" required
-                                   className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"/>
+                        <form
+                            action="https://formspree.io/f/xqeyaeqp"
+                            method="POST"
+                            className="w-full max-w-[545px] flex flex-col gap-5"
+                        >
+                            <input
+                                name="name"
+                                type="text"
+                                placeholder="Name *"
+                                required
+                                className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"
+                            />
 
-                            <input type="email" placeholder="Email"
-                                   className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"/>
+                            <input
+                                name="email"
+                                type="email"
+                                placeholder="Email"
+                                className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"
+                            />
 
-                            <input type="tel" placeholder="Phone number *" required
-                                   className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"/>
+                            <input
+                                name="phone"
+                                type="tel"
+                                placeholder="Phone number *"
+                                required
+                                className="w-full h-12 px-5 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all"
+                            />
+
+                            <textarea
+                                name="message"
+                                placeholder="Mensaje *"
+                                required
+                                rows={4}
+                                className="w-full px-5 py-3 bg-zinc-500 text-white placeholder-white/90 text-sm font-normal font-['Montserrat'] focus:outline-none focus:ring-2 focus:ring-white transition-all resize-none"
+                            />
 
                             <button type="submit"
                                     className="w-full h-16 mt-2 bg-white text-black text-base font-bold font-['Montserrat'] uppercase hover:bg-gray-200 transition-colors">

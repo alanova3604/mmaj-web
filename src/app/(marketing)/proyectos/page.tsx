@@ -4,11 +4,12 @@ import SwipperComponent from "@/componentes/IU/SwipperComponent";
 
 const imagenes = [
     "/home/features_1.webp",
-    "/home/features_1.webp",
-    "/home/features_1.webp",
-    "/home/features_1.webp",
-    "/home/features_1.webp"
-]
+    "/sliderHome/1.jpg",
+    "/sliderHome/2.jpg",
+    "/sliderHome/3.jpg",
+    "/sliderHome/4.jpg",
+    "/sliderHome/5.jpg",
+];
 
 export default function Proyectos(){
     return(
