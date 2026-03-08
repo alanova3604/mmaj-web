@@ -22,7 +22,7 @@ export default function Counter({ value, duration = 2 } : props) {
 
     useEffect(() => {
         if (isInView) {
-            motionValue.set(value);
+            motionValue.set(value ?? 0);
         }
     }, [isInView, value, motionValue]);
 
