@@ -3,7 +3,7 @@ import { motion, HTMLMotionProps } from "framer-motion";
 
 // Definimos la interfaz extendiendo las propiedades originales de un div de motion
 interface MotionWrapperProps extends HTMLMotionProps<"div"> {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     duration?: number;
     delay?: number;
     tag?: keyof typeof motion;
