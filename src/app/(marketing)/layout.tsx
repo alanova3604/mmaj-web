@@ -31,6 +31,7 @@ export const metadata: Metadata = {
         href: "/favicon/favicon-dark.png",
       },
     ],
+    apple: "/favicon/apple-touch-icon.png",
   },
 };
 
