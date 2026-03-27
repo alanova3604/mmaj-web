@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Montserrat} from "next/font/google";
+import { Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css"
 import Header from "@/componentes/layout/Header";
 import Footer from "@/componentes/layout/Footer";
@@ -18,9 +18,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MMAJ Cocinas Integrales",
   description: "Cocinas Integrales en Guadalajara",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/Favicon/favicon.png",
+        href: "/Favicon/favicon.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/Favicon/favicon-dark.png",
+        href: "/Favicon/favicon-dark.png",
+      },
+    ],
+  },
 };
 
-export default function RootLayout({children,}: Readonly<{
+export default function RootLayout({ children, }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -28,11 +42,11 @@ export default function RootLayout({children,}: Readonly<{
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
-      <div className="font-sans">
+        <div className="font-sans">
           <Header></Header>
           {children}
           <Footer></Footer>
-      </div>
+        </div>
       </body>
     </html>
   );

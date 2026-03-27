@@ -55,7 +55,7 @@ export default function Home() {
 
 
         <section
-            className="w-full py-22 bg-gradient-to-br from-zinc-500/10 to-zinc-500/20 overflow-hidden">
+            className="w-full py-24 bg-gradient-to-br from-zinc-500/10 to-zinc-500/20 overflow-hidden">
           <div className="px-6 mb-12 md:px-12 lg:px-24 flex flex-col items-start gap-4">
             <h2 className="text-white text-4xl md:text-5xl font-bold font-['Montserrat'] capitalize leading-tight">
               <MotionWrapper tag={"span"} duration={.3} delay={.2}>
@@ -156,7 +156,7 @@ export default function Home() {
 
 
         <section
-            className="relative w-full py-24 pb-10 md:py-32 md:pb-10 lg:pb-100  lg:py-40 flex flex-col justify-center items-center px-6 overflow-hidden">
+            className="relative w-full py-24 pb-10 md:py-32 md:pb-10 lg:pb-32 lg:py-40 flex flex-col justify-center items-center px-6 overflow-hidden">
           <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${CtaBanner})` }}>

@@ -36,32 +36,32 @@ export default function Nosotros(){
             </div>
 
             <section
-                className="h-[1010px] w-screen py-32 inline-flex flex-col justify-center items-center gap-12 overflow-hidden">
+                className="min-h-[50vh] md:min-h-[70vh] lg:h-[1010px] w-full py-24 md:py-32 flex flex-col justify-center items-center gap-6 md:gap-12 overflow-hidden mx-auto">
                 <div
-                    className="justify-center text-white text-[250px] font-semibold font-['Montserrat'] capitalize leading-[160px]">+
+                    className="flex justify-center text-white text-7xl md:text-[160px] lg:text-[250px] font-semibold font-['Montserrat'] capitalize leading-tight lg:leading-[160px]">+
                     <Counter value={20} />
                 </div>
                 <div
-                    className="justify-center text-white text-5xl font-normal font-['Montserrat'] capitalize leading-[80px]">años
+                    className="text-center text-white text-3xl md:text-5xl font-normal font-['Montserrat'] capitalize leading-tight md:leading-[80px]">años
                     de Experiencia
                 </div>
             </section>
 
             <section
-                className=" h-[1010px] py-32 w-screen inline-flex flex-col justify-center items-center gap-12 overflow-hidden">
+                className="min-h-[50vh] md:min-h-[70vh] lg:h-[1010px] w-full py-24 md:py-32 flex flex-col justify-center items-center gap-6 md:gap-12 overflow-hidden mx-auto">
                 <div
-                    className="justify-center text-white text-[250px] font-semibold font-['Montserrat'] capitalize leading-[160px]">
+                    className="flex justify-center text-white text-7xl md:text-[160px] lg:text-[250px] font-semibold font-['Montserrat'] capitalize leading-tight lg:leading-[160px]">
                     + <Counter value={100} />
                 </div>
                 <div
-                    className="justify-center text-white text-5xl font-normal font-['Montserrat'] capitalize leading-[80px]">Clientes
+                    className="text-center text-white text-3xl md:text-5xl font-normal font-['Montserrat'] capitalize leading-tight md:leading-[80px]">Clientes
                     Satisfechos
                 </div>
             </section>
 
 
             <section
-                className="w-full h-[1000px]  px-6 py-16 md:px-12 lg:px-24 lg:py-32 flex flex-col justify-center items-start gap-8 md:gap-12 overflow-hidden">
+                className="w-full min-h-[50vh] lg:min-h-[800px] px-6 py-16 md:px-12 lg:px-24 md:py-32 flex flex-col justify-center items-start gap-8 md:gap-12 overflow-hidden">
                 <MotionWrapper delay={.2} className="text-white text-4xl md:text-5xl font-bold capitalize leading-tight">
                     Materiales y Tecnología
                 </MotionWrapper>
