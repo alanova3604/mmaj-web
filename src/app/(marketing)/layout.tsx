@@ -25,15 +25,6 @@ export const metadata: Metadata = {
   description: "Diseño y fabricación de cocinas integrales de alta gama en Guadalajara. Calidad, precisión y elegancia para tu hogar.",
   keywords: ["cocinas integrales", "guadalajara", "diseño de cocinas", "fabricación de cocinas", "cocinas de lujo", "mmaj"],
   authors: [{ name: "Alan Valdez" }],
-  icons: {
-    icon: [
-      { url: "/favicon/favicon.png", type: "image/png" },
-      { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    apple: [
-      { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
   openGraph: {
     type: "website",
     locale: "es_MX",
