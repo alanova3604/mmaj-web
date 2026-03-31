@@ -1,14 +1,19 @@
+import { Metadata } from "next";
 import BannerSections from "@/componentes/layout/BannerSections";
 import SwipperComponent from "@/componentes/IU/SwipperComponent";
 
+export const metadata: Metadata = {
+  title: "Proyectos | Galería de Cocinas Integrales Realizadas | MMAJ",
+  description: "Explora nuestra selección de proyectos terminados. Desde el plano hasta la realidad, documentamos la precisión en cada ejecución técnica.",
+};
 
 const imagenes = [
-    "/home/features_1.webp",
-    "/sliderHome/1.jpg",
-    "/sliderHome/2.jpg",
-    "/sliderHome/3.jpg",
-    "/sliderHome/4.jpg",
-    "/sliderHome/5.jpg",
+  "/home/features_1.webp",
+  "/sliderHome/1.jpg",
+  "/sliderHome/2.jpg",
+  "/sliderHome/3.jpg",
+  "/sliderHome/4.jpg",
+  "/sliderHome/5.jpg",
 ];
 
 export default function Proyectos(){

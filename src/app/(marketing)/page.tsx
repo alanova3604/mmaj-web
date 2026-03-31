@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import MotionWrapper from "@/componentes/animation/MotionWrapper";
 import Features from "@/componentes/layout/Features"
 import SwipperHome from "@/componentes/IU/SwipperHome";
@@ -14,6 +15,11 @@ const imagenes = [
     "/sliderHome/5.jpg"
 ]
 
+
+export const metadata: Metadata = {
+  title: "MMAJ Cocinas Integrales | Diseño y Fabricación en Guadalajara",
+  description: "Especialistas en el diseño y fabricación de cocinas integrales de alta gama en Guadalajara. Calidad, precisión y elegancia para tu hogar.",
+};
 
 export default function Home() {
   return (

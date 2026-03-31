@@ -17,22 +17,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MMAJ Cocinas Integrales",
-  description: "Cocinas Integrales en Guadalajara",
+  metadataBase: new URL("https://www.cocinasmmaj.com.mx"),
+  title: {
+    default: "MMAJ Cocinas Integrales",
+    template: "%s | MMAJ Cocinas Integrales"
+  },
+  description: "Diseño y fabricación de cocinas integrales de alta gama en Guadalajara. Calidad, precisión y elegancia para tu hogar.",
+  keywords: ["cocinas integrales", "guadalajara", "diseño de cocinas", "fabricación de cocinas", "cocinas de lujo", "mmaj"],
+  authors: [{ name: "Alan Valdez" }],
   icons: {
     icon: [
+      { url: "/favicon/favicon.png", type: "image/png" },
+      { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    apple: [
+      { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    url: "https://www.cocinasmmaj.com.mx",
+    siteName: "MMAJ Cocinas Integrales",
+    title: "MMAJ Cocinas Integrales | Diseño y Fabricación en Guadalajara",
+    description: "Diseño y fabricación de cocinas integrales de alta gama. Calidad y tecnología para tu hogar.",
+    images: [
       {
-        media: "(prefers-color-scheme: light)",
-        url: "/favicon/favicon.png",
-        href: "/favicon/favicon.png",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/favicon/favicon-dark.png",
-        href: "/favicon/favicon-dark.png",
+        url: "/home/features_1.webp", // Using a real home image for OG
+        width: 1200,
+        height: 630,
+        alt: "MMAJ Cocinas Integrales Showcase",
       },
     ],
-    apple: "/favicon/apple-touch-icon.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MMAJ Cocinas Integrales",
+    description: "Diseño y fabricación de cocinas integrales de alta gama en Guadalajara.",
+    images: ["/home/features_1.webp"],
   },
 };
 

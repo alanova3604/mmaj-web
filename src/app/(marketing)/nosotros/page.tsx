@@ -1,8 +1,15 @@
+import { Metadata } from "next";
 import BannerSections from "@/componentes/layout/BannerSections";
 import Counter from "@/componentes/animation/Counter";
 import MotionWrapper from "@/componentes/animation/MotionWrapper";
 
 const CtaBanner = "/nosotros/banner-nosotros.webp"
+
+export const metadata: Metadata = {
+  title: "Nosotros | Calidad y Tecnología en Cocinas | MMAJ",
+  description: "Conoce nuestra filosofía, procesos de fabricación y la tecnología de vanguardia que utilizamos para crear cocinas integrales duraderas y elegantes.",
+};
+
 export default function Nosotros(){
     return(
         <div>

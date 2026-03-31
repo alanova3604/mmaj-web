@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import BannerSections from "@/componentes/layout/BannerSections";
+
+export const metadata: Metadata = {
+  title: "Contacto | Solicita tu Cotización de Cocina Integral | MMAJ",
+  description: "¿Listo para transformar tu cocina? Contáctanos para una consulta técnica o solicita tu cotización personalizada. Estamos en Guadalajara para servirte.",
+};
 
 export default function Contacto(){
     return (
